@@ -21,5 +21,5 @@ const listItems = images.reduce((acc, { url, alt }) => {
     return acc + listItem;
 }, '');
 
-galleryListRef.insertAdjacentHTML('afterbegin',listItems)
+galleryListRef.insertAdjacentHTML('afterbegin', listItems);
 

@@ -24,9 +24,11 @@ const categories = mainListRef.children;
 
 // const subListsRef = document.querySelectorAll('.item > ul');
 
-// const categoriesLength = headersRef.length;
+// const categoriesQuantity = headersRef.length;
 
-// for (let i = 0; i < categoriesLength; i += 1) {
+// for (let i = 0; i < categoriesQuantity; i += 1) {
 //     console.log(`Категория: ${headersRef[i].textContent}`);
 //     console.log(`Количество элементов: ${subListsRef[i].children.length}`);
 // }
+
+

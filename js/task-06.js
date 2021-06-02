@@ -1,6 +1,6 @@
 const inputRef = document.querySelector('#validation-input');
 
-const OnInputLengthChecking = event => {
+const OnInputValueChange = event => {
     const inputValue = event.currentTarget.value;
     const dataLengthValue = event.currentTarget.getAttribute('data-length');
     if (inputValue.length == dataLengthValue) {
@@ -12,4 +12,4 @@ const OnInputLengthChecking = event => {
     }
 };
 
-inputRef.addEventListener('change',OnInputLengthChecking);
+inputRef.addEventListener('change',OnInputValueChange);
