@@ -15,11 +15,14 @@ const images = [
 
 const galleryListRef = document.querySelector('#gallery');
 
-const listItems = images.reduce((acc, { url, alt }) => {
-    const imageTag = `<img class="image" src="${url}" alt="${alt}">`;
-    const listItem = `<li class='item'>${imageTag}</li>`;
-    return acc + listItem;
-}, '');
+// const listItems = images.reduce((acc, { url, alt }) => {
+//     const imageTag = `<img class="image" src="${url}" alt="${alt}">`;
+//     const listItem = `<li class='item'>${imageTag}</li>`;
+//     return acc + listItem;
+// }, '');
+
+const listItems = images
+  .reduce((acc, { url, alt }) => acc + `<li class='item'><img class="image" src="${url}" alt="${alt}"></li>`, '');
 
 galleryListRef.insertAdjacentHTML('afterbegin', listItems);
 
