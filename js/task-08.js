@@ -20,6 +20,8 @@ const generateRandomColor = () => {
 
 /*Функция формирования и добавления коллекции элементов*/
 const createBoxes = amount => {
+    width=START_WIDTH;
+    height = START_HEIGHT;
     const container = document.createElement('div');
         
     for (let i = 1; i <= amount; i += 1) {
